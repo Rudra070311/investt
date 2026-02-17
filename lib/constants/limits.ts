@@ -1,0 +1,4 @@
+export const LIMITS = {
+    QUIZ_ATTEMPTS_PER_DAY : 5,
+    SIMULATION_TRADES_PER_DAY: 20,
+};
