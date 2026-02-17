@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
-import AvatarUpload from "components/profile/Avatar";
+import AvatarUpload from "@/components/profile/Avatar";
 import "styles/profiles.css";
 import "styles/themes.css";
 
@@ -518,7 +518,7 @@ export default function ProfilePage() {
                 )}
                 {!profile.age_verified && profile.is_minor && (
                   <span className="consent-badge" title="Parental consent required">
-                    👪 Consent {profile.parental_consent ? "given" : "pending"}
+                    Consent {profile.parental_consent ? "given" : "pending"}
                   </span>
                 )}
               </p>
